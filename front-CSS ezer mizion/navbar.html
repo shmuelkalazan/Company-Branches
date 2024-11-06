@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./navbar.css" />
+  </head>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.style.display =
+        navLinks.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+  <body>
+    <a href="./home.html">Home</a>
+    <header class="navbar">
+      <div class="logo">MyLogo</div>
+      <nav class="nav-links">
+        <a href="#">בית</a>
+        <a href="#">אודות</a>
+        <a href="#">שירותים</a>
+        <a href="#">צור קשר</a>
+      </nav>
+      <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    </header>
+  </body>
+</html>

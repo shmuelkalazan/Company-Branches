@@ -1,0 +1,62 @@
+/* עיצוב כללי */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+  }
+  
+  /* עיצוב לוגו */
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* עיצוב קישורים */
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .nav-links a:hover {
+    color: #ddd;
+  }
+  
+  /* עיצוב תפריט המבורגר */
+  .hamburger-menu {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+  
+  /* ריספונסיביות */
+  @media (max-width: 600px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links a {
+      padding: 10px 0;
+      border-bottom: 1px solid #444;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  }
+  
