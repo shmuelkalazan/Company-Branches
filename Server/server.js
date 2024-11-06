@@ -12,7 +12,6 @@ app.get('/api/stores', async (req, res) => {
     const response = await axios.get('https://mcdonalds-live-engage-api-stage-1.azurewebsites.net/stores.json');
     res.json(response.data);
   } catch (error) {
-    console.error("server error");
     res.status(error.response ? error.response.status : 500).json({ error: 'Internal Server Error' });
 
   }

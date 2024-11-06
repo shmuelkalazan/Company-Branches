@@ -4,9 +4,7 @@ import createReducer from './reducerUtils'
 const initialState = {
     branchesList: [],
     selectedRegion: 0,
-    selectedCity: "",
-    currentBranch: {},
-    searchText: ""
+    selectedCity: "",currentBranch: {},searchText: ""
 }
 
 export const Branches = {
